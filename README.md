@@ -1,3 +1,5 @@
+# A FREE megaphone script for QBCore Framework, ESX Framework.
+
 Showcase : [CFX](https://forum.cfx.re/t/free-megaphone-script/5049366/)
 
 Step 1 - Add items in ESX or QBCore depending on your framework. Check the folder called items
@@ -14,3 +16,5 @@ Step 2 - Add the following code to dpemotes :
         EmoteMoving = true,
     }},
 ```
+
+![cb-megaphone](https://forum-cfx-re.akamaized.net/original/4X/4/d/6/4d6ce0a5aa52d7196479943a1e0ce74d6fb454b5.jpeg)
