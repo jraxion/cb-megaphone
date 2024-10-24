@@ -7,7 +7,6 @@ end
 
 local usingMegaphone = false
 
-
 function UseMegaphone()
     if usingMegaphone then 
         DisableSubmix()
@@ -25,6 +24,7 @@ function UseMegaphone()
         end
     end)
 end
+
 exports('UseMegaphone', UseMegaphone)
 
 RegisterNetEvent('megaphone:use')

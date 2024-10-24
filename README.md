@@ -2,9 +2,22 @@
 
 Showcase : [CFX](https://forum.cfx.re/t/free-megaphone-script/5049366/)
 
-Step 1 - Add items in ESX or QBCore depending on your framework. Check the folder called items
+## Dependency
 
-Step 2 - Add the following code to dpemotes :
+- QBCore, ESX or Qbox
+- pma-voice
+- cb_lib [cb_lib](https://github.com/cbdev9/cb_lib)
+- Inventory (All inventories supported. Check https://github.com/cbdev9/cb_lib/blob/fd0d9a6bb1e1b3920d8cc6e90fabf7994cb50905/shared/config.lua#L30 )
+
+## Installation
+
+Step 1 - Download [cb_lib](https://github.com/cbdev9/cb_lib)
+
+Step 2 - Open cb_lib/shared/config.lua and configure your framework, notifications etc.
+
+Step 3 - Add items in ESX or QBCore depending on your framework. Check the folder called items.
+
+Step 4 - Add the following code to dpemotes (or similar) :
 
 ```lua
     ["megaphone"] = {"molly@megaphone", "megaphone_clip", "Megaphone", AnimationOptions =

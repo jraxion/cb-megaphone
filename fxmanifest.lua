@@ -10,6 +10,7 @@ url 'https://cb-development.tebex.io/'
 
 
 client_scripts {
+    'config.lua',
     'client/main.lua'
 }
 
@@ -17,3 +18,5 @@ server_scripts {
     'config.lua',
     'server/main.lua',
 }
+
+dependency 'cb_lib'
