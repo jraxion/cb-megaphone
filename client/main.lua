@@ -8,7 +8,7 @@ end
 local usingMegaphone = false
 
 function UseMegaphone()
-    if usingMegaphone then 
+    if usingMegaphone then
         DisableSubmix()
     end
     usingMegaphone = not usingMegaphone
@@ -56,14 +56,14 @@ end)
 
 RegisterNetEvent('megaphone:updateSubmixStatus', function(state, source)
     if state then
-        if Config.ForceVolume then
+        if MEGAPHONE.ForceVolume then
             MumbleSetVolumeOverrideByServerId(source, 0.90)
         end
         MumbleSetSubmixForServerId(source, filter)
-        exports['pma-voice']:overrideProximityRange(Config.ForcedProximity, false)
+        exports['pma-voice']:overrideProximityRange(MEGAPHONE.ForcedProximity, false)
     else
         MumbleSetSubmixForServerId(source, -1)
-        if Config.ForceVolume then
+        if MEGAPHONE.ForceVolume then
             MumbleSetVolumeOverrideByServerId(source, -1.0)
         end
         exports['pma-voice']:clearProximityOverride()
