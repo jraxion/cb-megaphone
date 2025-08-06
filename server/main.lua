@@ -1,4 +1,4 @@
-local cblib = exports.cb_lib:Core()
+local cblib = exports.jraxion_lib:Core()
 
 cblib.Inventory.RegisterUsableItem('megaphone', function(source)
     TriggerClientEvent('megaphone:use', source)
